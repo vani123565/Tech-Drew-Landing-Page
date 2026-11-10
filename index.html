@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Placement Ready Deepavali Box | TechDrew</title>
+<meta name="description" content="5 placement guides for freshers: 90-day job plan, 3 ATS resumes, LinkedIn + GitHub kit, 200 aptitude questions, 100 tech interview questions. ₹595 → ₹99 this Deepavali.">
+<meta property="og:title" content="Placement Ready Deepavali Box: 5 guides for ₹99">
+<meta property="og:description" content="Everything from Day 1 to the Offer Letter. ₹595 → ₹99 this Deepavali.">
+<meta property="og:image" content="img/plan_1.jpg">
+<link rel="icon" href="img/logo.png">
+<style>
+:root {
+  --bg: #fffaf0; --card: #ffffff; --ink: #1b1b3a; --muted: #5a5a7a; --line: rgba(27,27,58,.10);
+  --gold: #ff9f1c; --gold-d: #c26f00; --green: #22a06b; --red: #e5484d; --soft: #fff1d9;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+html, body { overflow-x: hidden; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.5; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+section { padding: 56px 0; }
+h2 { font-size: clamp(26px, 5vw, 38px); line-height: 1.15; text-align: center; }
+.kicker { text-align: center; color: var(--gold-d); font-weight: 800; letter-spacing: .12em; font-size: 13px; text-transform: uppercase; margin-bottom: 8px; }
+.lead { text-align: center; color: var(--muted); max-width: 640px; margin: 12px auto 0; }
+
+/* buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; cursor: pointer; text-decoration: none;
+       background: var(--gold); color: var(--ink); font-weight: 800; font-size: 17px; padding: 15px 26px; border-radius: 14px;
+       box-shadow: 0 8px 24px rgba(255,150,40,.35); transition: transform .15s; }
+.btn:hover { transform: translateY(-2px); }
+.btn.ghost { background: #fff; box-shadow: none; border: 2px solid var(--ink); }
+.btn.small { font-size: 14px; padding: 9px 14px; border-radius: 10px; box-shadow: none; }
+
+/* top bar */
+.top { position: sticky; top: 0; z-index: 20; background: rgba(255,250,240,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+.top img { height: 40px; width: auto; }
+.top nav { display: flex; gap: 18px; font-weight: 600; font-size: 14px; }
+.top nav a { text-decoration: none; color: var(--muted); }
+@media (max-width: 720px) { .top nav { display: none; } }
+
+/* hero */
+.hero { overflow: hidden; padding: 40px 0 56px; background:
+  radial-gradient(ellipse 80% 50% at 50% 100%, rgba(255,160,50,.22), transparent 70%),
+  radial-gradient(ellipse 100% 70% at 50% 0%, #fff 0%, #fff4e0 60%, var(--bg) 100%); }
+.hero .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; }
+.hero .wrap > div:first-child { position: relative; z-index: 2; min-width: 0; }
+.tag { display: inline-block; background: rgba(255,159,28,.14); color: var(--gold-d); border: 2px solid var(--gold); border-radius: 99px; padding: 5px 14px; font-weight: 800; font-size: 13px; letter-spacing: .06em; }
+.hero h1 { font-size: clamp(34px, 7vw, 58px); line-height: 1.04; margin: 16px 0 12px; }
+.hero h1 span { color: var(--gold); }
+.hero p.sub { font-size: 18px; color: var(--muted); }
+.price { display: flex; align-items: center; gap: 14px; margin: 22px 0 6px; flex-wrap: wrap; }
+.price s { font-size: 28px; color: #9a98b8; font-weight: 800; text-decoration-color: var(--red); text-decoration-thickness: 3px; }
+.price b { font-size: 60px; line-height: 1; color: var(--gold); text-shadow: 0 4px 0 #ffd27a; }
+.off { background: var(--red); color: #fff; font-weight: 900; border-radius: 10px; padding: 6px 10px; font-size: 15px; transform: rotate(-4deg); }
+.ends { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+.ends b { color: var(--ink); }
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.trust { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 20px; font-size: 14px; color: var(--muted); }
+.trust span::before { content: '✓ '; color: var(--green); font-weight: 900; }
+.fan { position: relative; height: 420px; }
+.fan img { position: absolute; left: 50%; top: 30px; width: 40%; border-radius: 10px; border: 4px solid #fff; box-shadow: 0 14px 34px rgba(120,70,0,.22); }
+@media (max-width: 860px) {
+  .hero .wrap { grid-template-columns: 1fr; gap: 10px; }
+  .fan { height: 300px; order: -1; }
+  .fan img { width: 40%; top: 10px; }
+}
+@media (max-width: 480px) { .fan { height: 230px; } .price b { font-size: 52px; } }
+
+/* who */
+.who { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 28px; }
+.who div { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+.who b { display: block; font-size: 17px; margin: 6px 0 4px; }
+.who p { color: var(--muted); font-size: 15px; }
+.who i { font-style: normal; font-size: 28px; }
+@media (max-width: 720px) { .who { grid-template-columns: 1fr; } }
+
+/* journey */
+.journey { background: var(--soft); }
+.steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 32px; position: relative; }
+.steps::before { content: ''; position: absolute; left: 10%; right: 10%; top: 26px; height: 3px; background: repeating-linear-gradient(90deg, var(--gold) 0 10px, transparent 10px 18px); }
+.step { text-align: center; position: relative; text-decoration: none; }
+.step .n { width: 54px; height: 54px; margin: 0 auto 10px; border-radius: 50%; background: #fff; border: 3px solid var(--gold); display: grid; place-items: center; font-size: 24px; position: relative; }
+.step b { display: block; font-size: 15px; }
+.step span { font-size: 13px; color: var(--muted); }
+.step:last-child .n { background: var(--gold); }
+@media (max-width: 720px) {
+  .steps { grid-template-columns: 1fr; gap: 0; }
+  .steps::before { left: 26px; right: auto; top: 10px; bottom: 10px; width: 3px; height: auto; background: repeating-linear-gradient(180deg, var(--gold) 0 10px, transparent 10px 18px); }
+  .step { display: grid; grid-template-columns: 54px 1fr; gap: 0 14px; text-align: left; align-items: center; padding: 8px 0; }
+  .step .n { margin: 0; grid-row: span 2; }
+}
+
+/* guides */
+.guide { display: grid; grid-template-columns: 300px 1fr; gap: 36px; background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 28px; margin-top: 26px; box-shadow: 0 10px 30px rgba(120,70,0,.06); scroll-margin-top: 76px; }
+.guide .cover { position: relative; cursor: zoom-in; }
+.guide .cover img { border-radius: 10px; border: 1px solid var(--line); box-shadow: 0 10px 24px rgba(27,27,58,.12); }
+.guide .cover .num { position: absolute; top: -12px; left: -12px; background: var(--ink); color: #fff; font-weight: 900; border-radius: 10px; padding: 4px 10px; font-size: 13px; }
+.thumbs { display: flex; gap: 8px; margin-top: 10px; }
+.thumbs button { flex: 1; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: #fff; cursor: zoom-in; padding: 0; height: 74px; }
+.thumbs img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+.meta span { background: var(--soft); color: var(--gold-d); font-weight: 700; font-size: 12px; border-radius: 99px; padding: 4px 10px; }
+.guide h3 { font-size: clamp(22px, 4vw, 28px); line-height: 1.2; }
+.guide .for { color: var(--muted); margin: 6px 0 16px; }
+.guide h4 { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 16px 0 8px; }
+.toc { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; }
+.toc li { font-size: 15px; padding-left: 22px; position: relative; }
+.toc li::before { content: '›'; position: absolute; left: 6px; color: var(--gold); font-weight: 900; }
+.toc li em { font-style: normal; color: var(--muted); font-size: 13px; }
+.result { margin-top: 18px; background: rgba(34,160,107,.08); border-left: 4px solid var(--green); border-radius: 10px; padding: 12px 14px; font-weight: 600; }
+.result::before { content: '✅ '; }
+.worth { margin-top: 12px; font-size: 14px; color: var(--muted); }
+.worth s { color: #9a98b8; }
+@media (max-width: 820px) {
+  .guide { grid-template-columns: 1fr; gap: 22px; padding: 20px; }
+  .guide .cover { max-width: 300px; margin: 0 auto; width: 100%; }
+}
+@media (max-width: 520px) { .toc { grid-template-columns: 1fr; } }
+
+/* value table */
+.value { max-width: 640px; margin: 28px auto 0; background: var(--card); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+.value .row { display: flex; justify-content: space-between; gap: 12px; padding: 13px 20px; border-bottom: 1px solid var(--line); }
+.value .row span:last-child { font-weight: 700; white-space: nowrap; }
+.value .tot { background: var(--soft); }
+.value .tot span:last-child s { color: #9a98b8; }
+.value .now { background: var(--ink); color: #fff; font-size: 20px; font-weight: 900; border: 0; }
+.value .now { align-items: center; }
+.value .now small { display: block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--gold); margin-top: 2px; }
+.value .now span:last-child { color: var(--gold); font-size: 28px; display: flex; align-items: baseline; gap: 10px; }
+.value .now span:last-child s { color: #9a98b8; font-size: 18px; text-decoration-color: var(--red); text-decoration-thickness: 2px; }
+
+/* free overview */
+.free { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; margin-top: 30px; background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 28px; }
+.free-pics { position: relative; height: 430px; }
+.free-pics img { position: absolute; width: 58%; border-radius: 10px; border: 1px solid var(--line); box-shadow: 0 12px 28px rgba(27,27,58,.14); }
+.free-pics img:first-child { left: 0; top: 0; transform: rotate(-4deg); z-index: 2; }
+.free-pics img:last-child { right: 0; top: 34px; transform: rotate(5deg); }
+.free-toc { grid-template-columns: 1fr; margin-bottom: 14px; }
+.free-meta { color: var(--muted); font-size: 14px; margin-bottom: 16px; }
+@media (max-width: 820px) { .free { grid-template-columns: 1fr; padding: 20px; gap: 20px; } .free-pics { height: 300px; max-width: 360px; width: 100%; margin: 0 auto; } }
+
+/* final */
+.final { text-align: center; background: var(--ink); color: #fff; border-radius: 26px; padding: 44px 20px; margin: 0 16px; }
+.final h2 { color: #fff; }
+.final .price { justify-content: center; }
+.final .price s { color: #b8b6d8; }
+.final p { color: #c9c7e8; }
+footer { text-align: center; color: var(--muted); font-size: 13px; padding: 36px 16px 110px; }
+footer img { height: 44px; width: auto; margin: 0 auto 10px; }
+
+/* sticky mobile bar */
+.bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(27,27,58,.08);
+       display: none; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 16px; }
+.bar .p { line-height: 1.1; } .bar .p s { color: #9a98b8; font-size: 13px; } .bar .p b { font-size: 24px; color: var(--gold-d); display: block; }
+.bar .btn { padding: 12px 20px; font-size: 16px; }
+@media (max-width: 720px) { .bar { display: flex; } }
+
+/* lightbox */
+.lb { position: fixed; inset: 0; z-index: 50; background: rgba(15,15,35,.88); display: none; align-items: center; justify-content: center; padding: 16px; }
+.lb.on { display: flex; }
+.lb figure { position: relative; max-width: 620px; width: 100%; max-height: 100%; display: flex; flex-direction: column; align-items: center; }
+.lb .frame { position: relative; overflow: hidden; border-radius: 10px; max-height: calc(100vh - 110px); }
+.lb img { max-height: calc(100vh - 110px); width: auto; }
+.lb .frame.locked::after { content: 'Full guide inside the box 🎁'; position: absolute; left: 0; right: 0; bottom: 0; height: 45%;
+  background: linear-gradient(transparent, rgba(255,250,240,.96) 55%); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 22px; font-weight: 800; color: var(--ink); }
+.lb figcaption { color: #fff; margin-top: 10px; font-size: 14px; text-align: center; }
+.lb .x, .lb .nav { position: absolute; background: #fff; border: 0; border-radius: 50%; width: 44px; height: 44px; font-size: 22px; cursor: pointer; display: grid; place-items: center; }
+.lb .x { top: 12px; right: 12px; }
+.lb .nav.prev { left: 12px; top: 50%; } .lb .nav.next { right: 12px; top: 50%; }
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <img src="img/logo.png" alt="TechDrew">
+  <nav><a href="#guides">What's inside</a><a href="#price">Price</a><a href="#free">Free PDF</a></nav>
+  <a class="btn small" data-order href="#">Get the Box</a>
+</div></header>
+
+<!-- HERO -->
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="tag">🪔 DEEPAVALI OFFER</span>
+    <h1>Placement Ready<br><span>Deepavali Box</span></h1>
+    <p class="sub">5 step-by-step guides that take a fresher from <b>Day 1</b> to the <b>Offer Letter</b>: plan, resume, LinkedIn, aptitude and interview.</p>
+    <div class="price"><s>₹595</s><b>₹99</b><span class="off">83% OFF</span></div>
+    <p class="ends" id="ends"></p>
+    <div class="cta-row">
+      <a class="btn" data-order href="#">🎁 Get all 5 for ₹99</a>
+      <a class="btn ghost" href="#free">📥 Free fresher guide</a>
+    </div>
+    <div class="trust"><span>Instant PDF + Word files</span><span>Lifetime access</span><span>Works on phone</span></div>
+  </div>
+  <div class="fan" id="fan">
+    <img src="img/plan_1.jpg" alt=""><img src="img/resume1.jpg" alt=""><img src="img/linkedin_2.jpg" alt=""><img src="img/aptitude_1.jpg" alt=""><img src="img/interview_2.jpg" alt="">
+  </div>
+</div></section>
+
+<!-- WHO -->
+<section><div class="wrap">
+  <div class="kicker">Is this for you?</div>
+  <h2>Made for students who want a job, not more confusion</h2>
+  <div class="who">
+    <div><i>🎓</i><b>Final-year students</b><p>Placements are coming and you don't know where to start.</p></div>
+    <div><i>🧑‍💻</i><b>Freshers who graduated</b><p>You're applying everywhere but the replies aren't coming.</p></div>
+    <div><i>🔁</i><b>Career switchers</b><p>You want to move into IT: development, data or design.</p></div>
+  </div>
+</div></section>
+
+<!-- JOURNEY -->
+<section class="journey"><div class="wrap">
+  <div class="kicker">How the box works</div>
+  <h2>One guide for every step of the job hunt</h2>
+  <p class="lead">Use them in this order. Each guide picks up where the last one stops. Tap a step to jump to it.</p>
+  <div class="steps">
+    <a class="step" href="#g1"><div class="n">📅</div><b>1. Plan</b><span>Know what to do daily</span></a>
+    <a class="step" href="#g2"><div class="n">📄</div><b>2. Resume</b><span>Get shortlisted</span></a>
+    <a class="step" href="#g3"><div class="n">💼</div><b>3. Profile</b><span>Get noticed</span></a>
+    <a class="step" href="#g4"><div class="n">🧮</div><b>4. Aptitude</b><span>Clear the online test</span></a>
+    <a class="step" href="#g5"><div class="n">🏆</div><b>5. Interview</b><span>Get the offer</span></a>
+  </div>
+</div></section>
+
+<!-- GUIDES -->
+<section id="guides"><div class="wrap">
+  <div class="kicker">What's inside</div>
+  <h2>Look inside every guide before you buy</h2>
+  <p class="lead">Tap any page to preview it. These are real pages from the guides.</p>
+
+  <article class="guide" id="g1" data-pages="img/plan_1.jpg|Day 1–3: Your 90-day map;img/plan_3.jpg|Day 8–30: Basics + 3 mini projects;img/plan_6.jpg|Day 76–80: ATS resume">
+    <div><div class="cover"><span class="num">GUIDE 1</span><img src="img/plan_1.jpg" alt="Fresher to First Job, page 1"></div><div class="thumbs"></div></div>
+    <div>
+      <div class="meta"><span>📅 90-day plan</span><span>10 pages</span><span>PDF</span></div>
+      <h3>Fresher to First Job</h3>
+      <p class="for">"Where do I even start?" This guide answers that, with a day-by-day plan from choosing a role to signing the offer.</p>
+      <h4>What you'll do, day by day</h4>
+      <ul class="toc">
+        <li>Choose ONE role that fits you <em>Day 1–3</em></li>
+        <li>Set up your learning system <em>Day 4–7</em></li>
+        <li>Learn the basics + 3 mini projects <em>Day 8–30</em></li>
+        <li>A framework + one medium project <em>Day 31–60</em></li>
+        <li>The 3-projects rule, go live <em>Day 61–75</em></li>
+        <li>Write an ATS-friendly resume <em>Day 76–80</em></li>
+        <li>Portfolio, GitHub, LinkedIn <em>Day 81–85</em></li>
+        <li>Apply smartly, every day <em>Day 86–90</em></li>
+        <li>Interview preparation</li>
+        <li>Offer letter + your first 90 days</li>
+      </ul>
+      <div class="result">You stop guessing and know exactly what to do today.</div>
+      <p class="worth">Sold alone: <s>₹99</s> · in the box</p>
+    </div>
+  </article>
+
+  <article class="guide" id="g2" data-pages="img/resume1.jpg|Fresher Developer resume;img/resume2.jpg|Data Analyst resume;img/resume3.jpg|Designer resume">
+    <div><div class="cover"><span class="num">GUIDE 2</span><img src="img/resume1.jpg" alt="Fresher Developer resume template"></div><div class="thumbs"></div></div>
+    <div>
+      <div class="meta"><span>📄 3 templates</span><span>Word + PDF</span><span>1 page each</span></div>
+      <h3>3 ATS Resume Templates</h3>
+      <p class="for">Most resumes are rejected by software before a human sees them. These are built in a clean, single-column format that ATS software can read.</p>
+      <h4>You get</h4>
+      <ul class="toc">
+        <li>Fresher Developer resume</li>
+        <li>Data Analyst resume</li>
+        <li>Designer (UI/UX) resume</li>
+        <li>Editable Word (.docx) files</li>
+        <li>Ready PDF versions</li>
+        <li>One page, recruiter-friendly layout</li>
+      </ul>
+      <div class="result">Fill in your details in 30 minutes and get your resume shortlisted.</div>
+      <p class="worth">Sold alone: <s>₹149</s> · in the box</p>
+    </div>
+  </article>
+
+  <article class="guide" id="g3" data-pages="img/linkedin_2.jpg|Day 2: Headline;img/linkedin_3.jpg|Day 3: About section;img/linkedin_7.jpg|Day 7: GitHub profile">
+    <div><div class="cover"><span class="num">GUIDE 3</span><img src="img/linkedin_2.jpg" alt="LinkedIn + GitHub Kit page"></div><div class="thumbs"></div></div>
+    <div>
+      <div class="meta"><span>💼 10-day setup</span><span>10 pages</span><span>PDF</span></div>
+      <h3>LinkedIn + GitHub Kit</h3>
+      <p class="for">Recruiters search LinkedIn and check GitHub. Set up both in 10 days, one small task a day.</p>
+      <h4>Day by day</h4>
+      <ul class="toc">
+        <li>Photo, banner, custom URL <em>Day 1</em></li>
+        <li>A headline recruiters notice <em>Day 2</em></li>
+        <li>About section <em>Day 3</em></li>
+        <li>Featured + skills <em>Day 4</em></li>
+        <li>Connection messages <em>Day 5</em></li>
+        <li>First post + content calendar <em>Day 6</em></li>
+        <li>A pro GitHub profile <em>Day 7</em></li>
+        <li>Project README <em>Day 8</em></li>
+        <li>Commit habits + open source <em>Day 9</em></li>
+        <li>Your weekly habit <em>Day 10</em></li>
+      </ul>
+      <div class="result">Recruiters find you instead of you chasing them.</div>
+      <p class="worth">Sold alone: <s>₹99</s> · in the box</p>
+    </div>
+  </article>
+
+  <article class="guide" id="g4" data-pages="img/aptitude_1.jpg|How to use the question bank;img/aptitude_4.jpg|Quant 3: Time & Work, Speed & Distance;img/aptitude_6.jpg|Logical 1: Series and Coding">
+    <div><div class="cover"><span class="num">GUIDE 4</span><img src="img/aptitude_1.jpg" alt="Aptitude Question Bank page 1"></div><div class="thumbs"></div></div>
+    <div>
+      <div class="meta"><span>🧮 200 questions</span><span>with answers</span><span>10 pages</span></div>
+      <h3>Aptitude Question Bank</h3>
+      <p class="for">The online test is where most students drop out. Practise the question types that service companies' tests use, with shortcuts.</p>
+      <h4>Topics</h4>
+      <ul class="toc">
+        <li>Percentages, profit &amp; loss <em>Q1–23</em></li>
+        <li>Interest, ratio, averages <em>Q24–45</em></li>
+        <li>Time &amp; work, speed &amp; distance <em>Q46–66</em></li>
+        <li>Numbers, ages, probability <em>Q67–90</em></li>
+        <li>Series and coding <em>Q91–112</em></li>
+        <li>Relations, directions, syllogisms <em>Q113–131</em></li>
+        <li>Ranking, clocks, odd one out <em>Q132–150</em></li>
+        <li>Vocabulary and errors <em>Q151–174</em></li>
+        <li>Grammar, idioms, usage <em>Q175–200</em></li>
+      </ul>
+      <div class="result">Walk into TCS / Infosys / Wipro-style tests already practised.</div>
+      <p class="worth">Sold alone: <s>₹99</s> · in the box</p>
+    </div>
+  </article>
+
+  <article class="guide" id="g5" data-pages="img/interview_2.jpg|Internet + Web, Q1–5;img/interview_4.jpg|JavaScript + React, Q11–15;img/interview_10.jpg|Data Structures + Algorithms, Q41–45">
+    <div><div class="cover"><span class="num">GUIDE 5</span><img src="img/interview_2.jpg" alt="100 Tech Interview Questions page"></div><div class="thumbs"></div></div>
+    <div>
+      <div class="meta"><span>🎯 100 questions</span><span>flow-diagram answers</span><span>21 pages</span></div>
+      <h3>100 Tech Interview Questions</h3>
+      <p class="for">The technical round's most-asked questions. Every answer is drawn as a flow diagram, so you understand it once and remember it.</p>
+      <h4>10 sections, 10 questions each</h4>
+      <ul class="toc">
+        <li>Internet + Web</li>
+        <li>JavaScript + React</li>
+        <li>Backend + APIs</li>
+        <li>Databases</li>
+        <li>Data Structures + Algorithms</li>
+        <li>OOP + Software Design</li>
+        <li>OS + Networking</li>
+        <li>Git, DevOps + Cloud</li>
+        <li>System Design basics</li>
+        <li>AI / ML + Security</li>
+      </ul>
+      <div class="result">Revise the whole technical round in one place, the night before.</div>
+      <p class="worth">Sold alone: <s>₹149</s> · in the box</p>
+    </div>
+  </article>
+</div></section>
+
+<!-- PRICE -->
+<section id="price" class="journey"><div class="wrap">
+  <div class="kicker">The Deepavali price</div>
+  <h2>All 5 guides for less than a box of crackers</h2>
+  <div class="value">
+    <div class="row"><span>📅 Fresher to First Job</span><span>₹99</span></div>
+    <div class="row"><span>📄 3 ATS Resume Templates</span><span>₹149</span></div>
+    <div class="row"><span>💼 LinkedIn + GitHub Kit</span><span>₹99</span></div>
+    <div class="row"><span>🧮 Aptitude Question Bank</span><span>₹99</span></div>
+    <div class="row"><span>🎯 100 Tech Interview Questions</span><span>₹149</span></div>
+    <div class="row tot"><span>Bought separately</span><span><s>₹595</s></span></div>
+    <div class="row now"><span>🪔 Deepavali Box<small>Deepavali offer only</small></span><span><s>₹595</s>₹99</span></div>
+  </div>
+  <p class="lead" id="ends2"></p>
+  <p style="text-align:center;margin-top:18px"><a class="btn" data-order href="#">🎁 Get the Box for ₹99</a></p>
+</div></section>
+
+<!-- FREE OVERVIEW PDF -->
+<section id="free" class="journey"><div class="wrap">
+  <div class="kicker">Free for every student</div>
+  <h2>Fresher to Job: the complete overview</h2>
+  <p class="lead">Everything a fresher needs for the first job. Download it free, no sign-up.</p>
+  <div class="free">
+    <div class="free-pics">
+      <img src="img/free_1.jpg" alt="Overview PDF, page 1: The big picture">
+      <img src="img/free_7.jpg" alt="Overview PDF, page 7: Your 90-day plan">
+    </div>
+    <div>
+      <ul class="toc free-toc">
+        <li>The 5 hiring rounds and what each checks</li>
+        <li>7 fresher roles: pick the right one for you</li>
+        <li>The skills you actually need, by role</li>
+        <li>The 3-projects rule + project ideas</li>
+        <li>Resume, LinkedIn and GitHub checklists</li>
+        <li>Online test, technical and HR rounds</li>
+        <li>A 90-day plan + daily routine</li>
+        <li>Where to apply + a referral message template</li>
+      </ul>
+      <p class="free-meta">PDF · 8 pages · English · free</p>
+      <a class="btn" href="TechDrew_Fresher_Job_Overview_FREE.pdf" download>📥 Download free PDF</a>
+    </div>
+  </div>
+</div></section>
+
+<!-- FINAL -->
+<section><div class="final">
+  <h2>This Deepavali, light up your career 🚀</h2>
+  <div class="price"><s>₹595</s><b>₹99</b><span class="off">83% OFF</span></div>
+  <p id="ends3" style="margin-bottom:20px"></p>
+  <a class="btn" data-order href="#">🎁 Get all 5 guides now</a>
+</div></section>
+
+<footer>
+  <img src="img/logo.png" alt="TechDrew">
+  <p>TechDrew · Internships &amp; placement training · Happy Deepavali 🪔</p>
+</footer>
+
+<div class="bar"><div class="p"><s>₹595</s><b>₹99</b></div><a class="btn" data-order href="#">🎁 Get the Box</a></div>
+
+<div class="lb" id="lb">
+  <button class="x" aria-label="Close">✕</button>
+  <button class="nav prev" aria-label="Previous">‹</button>
+  <figure><div class="frame"><img id="lbimg" alt=""></div><figcaption id="lbcap"></figcaption></figure>
+  <button class="nav next" aria-label="Next">›</button>
+</div>
+
+<script>
+/* ===== EDIT THESE THREE LINES ===== */
+const WHATSAPP_NUMBER = '91XXXXXXXXXX';            // your WhatsApp number with 91, no + or spaces
+const OFFER_END = '2026-11-11T23:59:00+05:30';     // when the ₹99 offer stops
+const PAYMENT_LINK = '';                            // optional: Razorpay / Instamojo / UPI payment page. Empty = WhatsApp order.
+/* ================================== */
+
+const msg = encodeURIComponent('Hi TechDrew! I want the Deepavali Placement Box (5 guides for ₹99).');
+const orderUrl = PAYMENT_LINK || `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
+document.querySelectorAll('[data-order]').forEach(a => { a.href = orderUrl; a.target = '_blank'; a.rel = 'noopener'; });
+
+// offer end date, written plainly (no fake ticking timer)
+const end = new Date(OFFER_END);
+const fmt = end.toLocaleDateString('en-IN', { day: 'numeric', month: 'long', timeZone: 'Asia/Kolkata' });
+const over = Date.now() > end.getTime();
+const endTxt = over ? 'The Deepavali offer has ended. Message us for the current price.' : `Deepavali offer ends <b>${fmt}</b>, 11:59 PM.`;
+['ends', 'ends2', 'ends3'].forEach(id => { document.getElementById(id).innerHTML = endTxt; });
+
+// spread the hero covers like a hand of cards
+[...document.querySelectorAll('#fan img')].forEach((img, i) => {
+  const k = i - 2;
+  img.style.transform = `translateX(${-50 + k * 38}%) translateY(${Math.abs(k) * 8}%) rotate(${k * 7}deg)`;
+  img.style.zIndex = 10 - Math.abs(k);
+});
+
+// page previews
+const lb = document.getElementById('lb'), lbimg = document.getElementById('lbimg'), lbcap = document.getElementById('lbcap');
+let set = [], at = 0;
+function show(i) {
+  at = (i + set.length) % set.length;
+  lbimg.src = set[at].src; lbcap.textContent = `${set[at].cap}  (${at + 1} / ${set.length})`;
+  lbimg.parentElement.classList.toggle('locked', set[at].src.indexOf('resume') < 0);
+}
+function open(pages, i) { set = pages; lb.classList.add('on'); document.body.style.overflow = 'hidden'; show(i); }
+function close() { lb.classList.remove('on'); document.body.style.overflow = ''; }
+document.querySelectorAll('.guide').forEach(g => {
+  const pages = g.dataset.pages.split(';').map(s => { const [src, cap] = s.split('|'); return { src, cap }; });
+  const th = g.querySelector('.thumbs');
+  pages.forEach((p, i) => {
+    const b = document.createElement('button'); b.setAttribute('aria-label', 'Preview: ' + p.cap);
+    b.innerHTML = `<img src="${p.src}" alt="">`; b.onclick = () => open(pages, i); th.appendChild(b);
+  });
+  g.querySelector('.cover').onclick = () => open(pages, 0);
+});
+lb.querySelector('.x').onclick = close;
+lb.querySelector('.prev').onclick = e => { e.stopPropagation(); show(at - 1); };
+lb.querySelector('.next').onclick = e => { e.stopPropagation(); show(at + 1); };
+lb.onclick = e => { if (e.target === lb) close(); };
+addEventListener('keydown', e => {
+  if (!lb.classList.contains('on')) return;
+  if (e.key === 'Escape') close(); if (e.key === 'ArrowLeft') show(at - 1); if (e.key === 'ArrowRight') show(at + 1);
+});
+</script>
+</body>
+</html>
